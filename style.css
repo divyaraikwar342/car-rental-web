@@ -148,9 +148,9 @@ header{
     bottom: 4rem;
     left: 100px;
     background: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 0.5rem;
-    border: 4px solid blue;
+   
 }
 
 .input-box{
@@ -174,8 +174,8 @@ header{
     padding: 10px 34px;
     border: none;
     border-radius: 0.5rem;
-    background: #474fa0;
-    color: #eeeff1;
+
+    color: #93a047;
     font-size: 1rem;
     font-weight: 500;    
 }
@@ -253,7 +253,7 @@ margin: 1.4rem 0 0 .5rem;
 }
 .service-container .box .box-img img{
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 1rem;
     object-fit: cover;
     object-position: center;
@@ -294,4 +294,73 @@ margin: 1.4rem 0 0 .5rem;
 }
 .service-container .box .btn:hover{
    background-color: var(--main-color);
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.about-img img{
+    width: 100%;
+}
+.about-text span{
+    font-weight: 500;
+    color: var(--main-color);
+    text-transform:uppercase ;
+}
+.about-text p{
+    margin: 0.5rem 0 1.4rem;
+}
+.about-text .btn{
+    padding: 10px 20px;
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.about-text .btn:hover{
+    background: var(--main-color);
+}
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+
+}
+.rev-img{
+    width: 70px;
+    height: 70px;
+
+}
+.rev-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
+}
+.reviews-container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1 );
+    border-radius: 0.5rem;
+
+}
+.reviews-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+.reviews-container .box p{
+    font-style: italic;
+}
+.reviews-container .box .stars{
+    color: var(--main-color);
 }
